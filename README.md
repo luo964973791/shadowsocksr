@@ -17,7 +17,8 @@ docker run -it --restart=always --name ss -d -p 8118:8118 \
 cd /root/.local/share && git clone https://github.com/luo964973791/shadowsocksr.git
 cd shadowsocksr 
 bash ssr.sh install
-bash ssr.sh config   #更改SSR服务器IP,端口，可以参考config.json进行配置.
+bash ssr.sh config   #更改SSR服务器IP,端口
+bash ssr.sh start    #启动SSR服务,并启动1080
 yum install privoxy -y
 cat /etc/privoxy/config | grep -E "127.0.0.1:1080|0.0.0.0"
 listen-address  0.0.0.0:8118
