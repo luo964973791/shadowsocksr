@@ -16,7 +16,6 @@ docker run -it --restart=always --name ss -d -p 8118:8118 \
 ```javascript
 cd /root/.local/share && git clone https://github.com/luo964973791/shadowsocksr.git
 cd shadowsocksr 
-bash ssr.sh install
 bash ssr.sh config   #更改SSR服务器IP,端口
 bash ssr.sh start    #启动SSR服务,并启动1080
 yum install privoxy -y
