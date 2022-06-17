@@ -1,12 +1,12 @@
 {
-    "server": "yqyyyyy.china-cdn-net.com",
-    "server_port": 36426,
+    "server": "yqyxxx.cdn-china.net",
+    "server_port": 32xxx,
     "local_address": "127.0.0.1",
     "local_port": 1080,
 
     "password": "http://cc.ax/",
-    "method": "aes-256-cfb",
-    "protocol": "auth_aes128_md5",
+    "method": "chacha20-ietf",
+    "protocol": "auth_aes128_sha1",
     "protocol_param": "115219:tLnoTp",
     "obfs": "plain",
     "obfs_param": "data.bilibili.com/3fdf0115219",
@@ -22,4 +22,3 @@
     "redirect": "",
     "fast_open": false
 }
-
