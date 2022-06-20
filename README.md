@@ -20,7 +20,7 @@ bash ssr.sh config   #更改SSR服务器IP,端口
 bash ssr.sh start    #启动SSR服务,并启动1080
 yum install privoxy -y
 cat /etc/privoxy/config | grep -E "127.0.0.1:1080|0.0.0.0"
-listen-address  0.0.0.0:8118
+listen-address  172.27.0.3:8118  #内网ip地址.
 forward-socks5t   /               127.0.0.1:1080 .
 systemctl start privoxy && systemctl enable privoxy
 ```
